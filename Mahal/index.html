@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="index.css">
+       
+    </head>
+    <header>
+        
+    </header>
+    <body>
+        <button class="center button" id="animate" onclick="heart_animation()">
+            <p>I love you!</p>
+        </button>
+        <container class="animation" id="heart_animation" style="display:none">
+            <img id="fallinghrts" src="falling_hearts.gif"> 
+        </container>
+        <script>
+            //document.getElementById("animate").onclick(heart_animation)
+            //document.getElementById("animate").addEventListener("click", heart_animation);
+            function heart_animation(){
+                var x = document.getElementById("heart_animation");
+                if (x.style.display == "none"){
+                    x.style.display = "block";
+                }else{
+                    x.style.display = "none";
+                }
+            }
+        </script>
+    </body>
+    <footer>
+        
+    </footer>
+    
+</html>
